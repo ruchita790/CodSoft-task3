@@ -12,6 +12,50 @@ TASK 3: ATM INTERFACE
 
 Ans:
 
+	import java.util.Scanner;
+	class Atm
+	{
+    public static void main(String [] args)
+    {
+       int a,bal=10000;
+       float b,sum,c,d;
+       System.out.println("1.Withdrawing Amount");
+       System.out.println("2.Depositing Amount");
+       System.out.println("3.Checking the balance");
+       System.out.println("Choose your option");
+       Scanner A=new Scanner(System.in);
+       a=A.nextInt();
+       if(a==1)
+       {
+         System.out.println("Enter Withdrwal Amount");
+         c=A.nextFloat();
+         if(c<bal)
+         {
+          d=bal-c;
+          System.out.println("Current Balance:"+d);
+         }
+         else
+         {
+             System.out.println("Incaficient Balance");
+         }
+       }
+       else if(a==2)
+       {
+          System.out.println("Enter Deposit Balance=");
+          b=A.nextFloat();
+          sum=b+bal;
+          System.out.println("Current Balance="+sum);
+       }
+       else if(a==3)
+       {
+         System.out.println("Account balance="+bal);
+       }
+       else
+       {
+         System.out.println("Choose correct option");
+       }
+    }
+	}
 
 Instraction:
 
