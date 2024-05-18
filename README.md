@@ -60,6 +60,6 @@ Ans:
 Instraction:
 
  	1. Copy Full code.
- 	2. Save: Grade.java
- 	3. Compile: javac Grade.java
- 	4. Run: java Grade
+ 	2. Save: Atm.java
+ 	3. Compile: javac Atm.java
+ 	4. Run: java Atm
